@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h1>Here we are users : </h1>
+
+<form method="POST">
+
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success" value="Submit">
+
+</form>
+
+
+
+
+
+{% comment %}
+{#   {% if users %} #}
+{#    <!--#}
+{#    <ol>#}
+    {# {% for person in users %} #}
+{#    <li>User Info</li>#}
+{#      <ul>#}
+{#          <li>First Name : {# {{ person.first_name }} #} </li>#}
+{#          <li>First Name :  {{ person.last_name }}</li>#}
+{#          <li>First Name : {{ person.email}} #}</li>#}
+{#      </ul>#}
+{#    {% endfor %}#}
+{#    </ol>#}
+{##}
+{##}
+{#  {% endif %} #}
+{% endcomment %}
+</body>
+</html>
